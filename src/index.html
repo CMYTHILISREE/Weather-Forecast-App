@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Header section-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/weather-app.png"/>
+    <link href="./output.css" rel="stylesheet">
+    <title>Weather Forecast App</title>
+</head>
+<!--Body section with Tailwind CSS Stylings-->
+<body class="m-0 p-0 box-border font-serif " style="background-image: url('./assets/background.jpg');background-repeat:no-repeat; background-attachment: fixed; background-size: cover;">
+    <h1 class="text-4xl font-bold underline text-white text-center w-full mt-4"> Weather Forecast </h1>
+<!--flex for weather input and display-->
+    <div class="flex flex-row p-5 gap-14 sm:gap-5"id="container">
+        <div class="w-96 h-14 px-px  rounded  text-xl" id="weatherInput">
+            <h1 class="text-white text-xl w-96 font-bold sm:w-60 smm:60">Enter a City Name</h1>
+            <input class="w-96 h-9 m-3 px-px cursor-pointer text-sm font-bold pl-5 sm:w-60 smm:60" id="cityInput" type="text" placeholder="E.g., New York, London, Tokyo" >
+            <button class="w-96 m-3 text-center bg-white text-sm mt-4 p-2 font-bold hover:bg-zinc-700 hover:text-white hover:translate-y-1 sm:w-60 smm:60" id="search">Search</button>
+            <div class="w-96 text-white text-sm ml-3 sm:hidden smm:hidden" id="separator"> ———————————————  or ——————————————— </div>
+                <button class="w-96 m-3 text-center bg-gray-400 text-sm mt-4 p-2 font-bold sm:w-60 smm:60 hover:bg-zinc-700 hover:text-white" id="location">Use Current Location</button>
+                <div id="dropdown"></div>
+        </div>
+            <div class="m-10 w-full" id="weatherData ">
+        <!--Current weather information-->
+                <div class="flex flex-row bg-white text-black flex-wrap w-full justify-between p-5" id="currentWeather">
+                    <div class= "bg-sky-700 text-white p-4" id="information">
+                            <h3 class="text-center text-black">(City Name)</h3>
+                            <h4>🌡️Temperature: ——°C</h4>
+                            <h4>💨Wind: ——M/S</h4>
+                            <h4>💧Humidity: ——%</h4>
+                    </div>
+                    <div class="mb-6 w-20 h-20" id="icon">
+                        <img src="./assets/rainy.png" alt="Weather" >
+                        <h4 class="text-black">Weather Information</h4>
+                    </div>
+                </div>
+         <!--Forecast weather information-->
+                <div id="daysForecast">
+                    <h2 class="my-2.5 text-white"><b><u>Five Days Forecst</u></b></h2>
+                        <!--weather cards-->
+                    <ul class="flex flex-row flex-wrap text-sm justify-start gap-12 bg-white p-8 " id="weather-cards">
+                        <li class="basis-1/5 bg-sky-700 text-white p-4 w-full" id="card">
+                            <h3 class="text-center text-black">(Date)</h3>
+                            <h4>🌡️Temp:——°C</h4>
+                            <h4>💨Wind:——M/S</h4>
+                            <h4>💧Humidity:—%</h4>
+                        </li>
+                        <li class="basis-1/5 bg-sky-700 text-white ext-white p-4" id="card">
+                            <h3 class="text-center text-black">(Date)</h3>
+                            <h4>🌡️Temp:——°C</h4>
+                            <h4>💨Wind:——M/S</h4>
+                            <h4>💧Humidity:—%</h4>
+                        </li>
+                        <li class="basis-1/5 bg-sky-700 text-white p-4" id="card">
+                            <h3 class="text-center text-black">(Date)</h3>
+                            <h4>🌡️Temp:——°C</h4>
+                            <h4>💨Wind:——M/S</h4>
+                            <h4>💧Humidity:—%</h4>
+                        <li class="basis-1/5 bg-sky-700 text-white p-4" id="card">
+                            <h3 class="text-center text-black">(Date)</h3>
+                            <h4>🌡️Temp:——°C</h4>
+                            <h4>💨Wind:——M/S</h4>
+                            <h4>💧Humidity:—%</h4>
+                        </li>
+                        <li class="basis-1/5 bg-sky-700 text-white p-4" id="card">
+                            <h3 class="text-center text-black">(Date)</h3>
+                            <h4>🌡️Temp:——°C</h4>
+                            <h4>💨Wind:——M/S</h4>
+                            <h4>💧Humidity:—%</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+    </div>
+        <!--Footer Section-->
+    <footer class="smm:hidden">
+        <div class="flex flex-row gap-5 justify-center p-1 bg-sky-700 w-full">
+        <div>
+        <a href="https://wa.me/8884695310" class="fa fa-whatsapp"><img src="./assets/whatsapp (1).png" alt="whatsapp" width="50px" height="50px"/></a>
+       </div>
+       <div >
+       <a href="https://www.gmail.com" class="fa fa-gmail"><img src="./assets/gmail.png" alt="gmail" width="50px" height="50px"/></a>
+       </div>
+       </div>  
+    </div>
+    
+        <div class="text-center text-white bg-sky-700 p-1 w-full">
+            <span>Copyright &copy2024 WeatherApp</span>
+            </div>
+    </footer> 
+        <!--Javascript section-->   
+<script src="script.js" defer></script>  
+</body>
+</html>
