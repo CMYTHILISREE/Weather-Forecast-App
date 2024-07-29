@@ -140,10 +140,10 @@ function updateCityDropdown(cities) {
     if (!dropdown) {
         // Create a new dropdown if it doesn't exist
         const newheading = document.createElement('p');
-        newheading.innerHTML = `<h2 class="text-xl font-extrabold text-start mt-4 text-white ">Recent Search</h2>`;
+        newheading.innerHTML = `<h2 class="text-xl font-extrabold text-start mt-4 text-white smm:pl-5 smm:m-0">Recent Search</h2>`;
         const newDropdown = document.createElement('select');
         newDropdown.id = 'city-dropdown';
-        newDropdown.classList.add('p-3', 'border', 'rounded-lg', 'bg-white', 'hover:white','hover:text-black','text-black','m-3', 'w-96','sm:w-60','smm:60');
+        newDropdown.classList.add('p-3', 'border', 'rounded-lg', 'bg-white', 'hover:white','hover:text-black','text-black','m-3', 'w-96','sm:w-60','smm:w-64');
         newDropdown.addEventListener('change', (event) => {
             const cityInput = event.target.value;
             if (cityInput) {

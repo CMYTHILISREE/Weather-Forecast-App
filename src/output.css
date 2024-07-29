@@ -845,12 +845,121 @@ video {
 }
 
 @media (min-width: 200px) and (max-width: 537px) {
+  .smm\:m-0 {
+    margin: 0px;
+  }
+
   .smm\:hidden {
     display: none;
   }
 
+  .smm\:w-40 {
+    width: 10rem;
+  }
+
+  .smm\:w-32 {
+    width: 8rem;
+  }
+
+  .smm\:w-60 {
+    width: 15rem;
+  }
+
+  .smm\:w-24 {
+    width: 6rem;
+  }
+
+  .smm\:w-48 {
+    width: 12rem;
+  }
+
+  .smm\:w-64 {
+    width: 16rem;
+  }
+
+  .smm\:w-10 {
+    width: 2.5rem;
+  }
+
+  .smm\:w-80 {
+    width: 20rem;
+  }
+
+  .smm\:w-96 {
+    width: 24rem;
+  }
+
+  .smm\:w-full {
+    width: 100%;
+  }
+
+  .smm\:flex-none {
+    flex: none;
+  }
+
   .smm\:flex-col {
     flex-direction: column;
+  }
+
+  .smm\:gap-36 {
+    gap: 9rem;
+  }
+
+  .smm\:gap-48 {
+    gap: 12rem;
+  }
+
+  .smm\:gap-56 {
+    gap: 14rem;
+  }
+
+  .smm\:gap-64 {
+    gap: 16rem;
+  }
+
+  .smm\:gap-x-48 {
+    -moz-column-gap: 12rem;
+         column-gap: 12rem;
+  }
+
+  .smm\:p-0 {
+    padding: 0px;
+  }
+
+  .smm\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .smm\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .smm\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .smm\:pl-5 {
+    padding-left: 1.25rem;
+  }
+
+  .smm\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .smm\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .smm\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .smm\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .smm\:pl-3 {
+    padding-left: 0.75rem;
   }
 }
 
@@ -861,6 +970,10 @@ video {
 
   .sm\:w-60 {
     width: 15rem;
+  }
+
+  .sm\:w-64 {
+    width: 16rem;
   }
 
   .sm\:gap-5 {
